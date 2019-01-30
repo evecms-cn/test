@@ -1,0 +1,107 @@
+    <nz-divider></nz-divider>
+    <div nz-row nzGutter="8">
+        <div nz-col nzXs="24" nzSm="12" nzMd="12" class="mb-md">
+          <div class="content">
+           <div class="avatar">
+            <nz-avatar nzSrc="https://image.eveonline.com/Corporation/98578077_128.png"></nz-avatar>
+          </div>
+          <div class="desc">
+            <div class="desc-title">New Eden Stock Corporation</div>
+            <div><nz-avatar nzIcon="user" nzSrc="https://image.eveonline.com/Alliance/824518128_64.png"></nz-avatar>假砖家 | 地球－伟大航道－黄金梅丽号－厨房－小强部门</div>
+          </div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzSm="12" nzMd="12" class="mb-md">
+        <div class="page-extra">
+          <div>
+            <p>项目数</p>
+            <p>56</p>
+          </div>
+          <div>
+            <p>团队内排名</p>
+            <p>8
+              <span> / 24</span>
+            </p>
+          </div>
+          <div>
+            <p>项目访问</p>
+            <p>2,223</p>
+          </div>
+        </div>
+      </div>
+   </div>
+    <div nz-row nzGutter="8">
+      <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+        <div nz-row nzType="flex" nzAlign="middle" class="bg-primary rounded-md">
+          <div nz-col nzSpan="12" class="p-md text-white">
+            <div class="h2 mt0">123,456</div>
+            <p class="text-nowrap mb0">Website Traffics</p>
+          </div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+        <div nz-row nzType="flex" nzAlign="middle" class="bg-success rounded-md">
+          <div nz-col nzSpan="12" class="p-md text-white">
+            <div class="h2 mt0">234,567K</div>
+            <p class="text-nowrap mb0">Website Impressions</p>
+          </div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+        <div nz-row nzType="flex" nzAlign="middle" class="bg-orange rounded-md">
+          <div nz-col nzSpan="12" class="p-md text-white">
+            <div class="h2 mt0">$458,778</div>
+            <p class="text-nowrap mb0">Total Sales</p>
+          </div>
+        </div>
+      </div>
+      <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md">
+        <div nz-row nzType="flex" nzAlign="middle" class="bg-magenta rounded-md">
+          <div nz-col nzSpan="12" class="p-md text-white">
+            <div class="h2 mt0">456</div>
+            <p class="text-nowrap mb0">Support Tickets</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div nz-row nzGutter="8">
+      <div nz-col nzXs="24" nzSm="12" nzMd="6" class="mb-md"> 
+          <form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm($event,validateForm.value)"  class="ant-advanced-search-form">
+              <nz-form-item>
+                  <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>开始日期</nz-form-label>
+                  <nz-form-control [nzSm]="16" [nzXs]="24">
+                    <nz-date-picker formControlName="datePicker"></nz-date-picker>
+                  </nz-form-control>
+                </nz-form-item>
+                <nz-form-item>
+                    <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>结束日期</nz-form-label>
+                    <nz-form-control [nzSm]="16" [nzXs]="24">
+                      <nz-date-picker formControlName="datePicker"></nz-date-picker>
+                    </nz-form-control>
+                  </nz-form-item>
+                  <nz-form-item>
+                      <nz-form-label [nzSm]="8" [nzXs]="24" nzRequired>月份选择</nz-form-label>
+                      <nz-form-control [nzSm]="16" [nzXs]="24">
+                        <nz-month-picker formControlName="monthPicker"></nz-month-picker>
+                      </nz-form-control>
+                    </nz-form-item>
+                    <nz-form-item>
+                        <nz-form-label [nzSm]="8" [nzXs]="24"  nzRequired>船形对比</nz-form-label>
+                        <nz-form-control [nzSm]="16" [nzXs]="24" >
+                              <nz-select formControlName="phoneNumberPrefix" >
+                                <nz-option nzLabel="+86" nzValue="+86"></nz-option>
+                                <nz-option nzLabel="+87" nzValue="+87"></nz-option>
+                              </nz-select>
+                        </nz-form-control>
+                      </nz-form-item>
+                      <nz-form-item>
+                        <nz-form-control [nzXs]="{ span: 24, offset: 0 }" [nzSm]="{ span: 16, offset: 8 }">
+                          <button nz-button nzType="primary">更新</button>
+                        </nz-form-control>
+                      </nz-form-item>
+              </form>
+      </div>
+      <div nz-col nzXs="24" nzSm="12" nzMd="18" class="mb-md"> 
+        123123
+      </div>
+    </div>
